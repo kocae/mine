@@ -11,7 +11,7 @@ class myUNet(nn.Module):
             nn.Conv3d(in_channel, 16, kernel_size=3, padding=1),
             nn.BatchNorm3d(16), 
             nn.ReLU(),
-            nn.Conv3d(16, 32, kernel_size=3, padding=1), # padding有必要吗？
+            nn.Conv3d(16, 32, kernel_size=3, padding=1), 
             nn.BatchNorm3d(32),
             nn.ReLU()
         ) # 1->32
@@ -40,7 +40,7 @@ class myUNet(nn.Module):
             nn.ReLU()
         ) # 128->256
 
-        # decoder部分，每层分为拼接前的反卷积，拼接，拼接后的卷积三部分哈
+        # decoder部分，每层分为拼接前的反卷积，拼接，拼接后的卷积三部分
         self.upconv3 = nn.ConvTranspose3d(256, 256, kernel_size=2, stride=2)
         self.decoder3 = nn.Sequential(
             nn.Conv3d(128+256, 128, kernel_size=3, padding=1),
