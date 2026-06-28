@@ -21,7 +21,7 @@
         <mxCell id="zwdBU7YMSMu1EzGOEkfI-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;预处理&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="160" x="330" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="zwdBU7YMSMu1EzGOEkfI-4" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontFamily=Times New Roman;" value="" vertex="1">
+        <mxCell id="zwdBU7YMSMu1EzGOEkfI-4" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontFamily=Times New Roman;" value="MRI" vertex="1">
           <mxGeometry height="80" width="80" x="360" y="20" as="geometry" />
         </mxCell>
         <mxCell id="zwdBU7YMSMu1EzGOEkfI-5" edge="1" parent="1" source="zwdBU7YMSMu1EzGOEkfI-4" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=50;exitDy=80;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Times New Roman;" target="zwdBU7YMSMu1EzGOEkfI-3" value="">
@@ -179,7 +179,7 @@
         <mxCell id="1ujZz8C-JaTFy7bkJe4T-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;逆离散小波变换，得到单轴高频特征和跨轴高频特征&lt;/span&gt;" vertex="1">
           <mxGeometry height="50" width="200" x="160" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="1ujZz8C-JaTFy7bkJe4T-24" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontFamily=Times New Roman;fillColor=#eeeeee;strokeColor=#36393d;" value="" vertex="1">
+        <mxCell id="1ujZz8C-JaTFy7bkJe4T-24" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fontFamily=Times New Roman;fillColor=#eeeeee;strokeColor=#36393d;" value="掩码" vertex="1">
           <mxGeometry height="80" width="80" x="520" y="610" as="geometry" />
         </mxCell>
         <mxCell id="1ujZz8C-JaTFy7bkJe4T-25" edge="1" parent="1" source="1ujZz8C-JaTFy7bkJe4T-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.488;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="1ujZz8C-JaTFy7bkJe4T-24">
@@ -193,20 +193,20 @@
         </mxCell>
         <mxCell id="1ujZz8C-JaTFy7bkJe4T-27" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontFamily=Times New Roman;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="440" y="540" as="sourcePoint" />
-            <mxPoint x="440" y="300" as="targetPoint" />
+            <mxPoint x="140" y="540" as="sourcePoint" />
+            <mxPoint x="140" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="1ujZz8C-JaTFy7bkJe4T-28" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontFamily=Times New Roman;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="440" y="300" as="sourcePoint" />
-            <mxPoint x="470" y="300" as="targetPoint" />
+            <mxPoint x="140" y="200" as="sourcePoint" />
+            <mxPoint x="170" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="1ujZz8C-JaTFy7bkJe4T-29" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontFamily=Times New Roman;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="440" y="540" as="sourcePoint" />
-            <mxPoint x="470" y="540" as="targetPoint" />
+            <mxPoint x="140" y="540" as="sourcePoint" />
+            <mxPoint x="170" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="1ujZz8C-JaTFy7bkJe4T-44" edge="1" parent="1" source="1ujZz8C-JaTFy7bkJe4T-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="1ujZz8C-JaTFy7bkJe4T-39">
@@ -220,6 +220,12 @@
         </mxCell>
         <mxCell id="1ujZz8C-JaTFy7bkJe4T-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;对高频子带进行调制&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="200" x="160" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="1ujZz8C-JaTFy7bkJe4T-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;下采样调整尺寸&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="650" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="1ujZz8C-JaTFy7bkJe4T-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 15px;&quot;&gt;基于小波变换的轴向相关结构调制&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="10" y="350" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
